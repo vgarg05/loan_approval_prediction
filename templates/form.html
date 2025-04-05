@@ -5,39 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Price Prediction</title>
     <style>
-        div{
-            background-color: #4E1F00; 
-            height: 700px;
-            width: 700px;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4E1F00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #4E1F00;
+            max-width: 700px;
+            width: 90%;
             border-radius: 20px;
-            padding-left: 20px;
+            padding: 30px 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
-        h1{
+
+        h1 {
             color: #F8F4E1;
-            padding-top: 30px;
-            display:flex;
-            justify-content:center;
+            text-align: center;
+            margin-bottom: 30px;
         }
-        h2{
+
+        h2 {
             color: #F8F4E1;
+            text-align: center;
+            margin-top: 20px;
         }
-        label{
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
             color: #FEBA17;
-            font-size: 25px;
+            font-size: 18px;
+            margin-bottom: 5px;
         }
-        input{
-            background-color: #F8F4E1;
-            height: 25px;
+
+        input {
+            width: 100%;
+            padding: 8px 10px;
+            font-size: 16px;
             border-radius: 5px;
-            border-color:#FEBA17 ;
-            margin-bottom: 10px;
+            border: 1px solid #FEBA17;
+            background-color: #F8F4E1;
         }
-        button{
-            background-color:#FEBA17;
-            width:200px;
-            height:40px;
-            border-radius:10px;
-            margin-left:250px;
+
+        button {
+            display: block;
+            width: 200px;
+            height: 45px;
+            margin: 30px auto 0;
+            background-color: #FEBA17;
+            color: #000;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e0a800;
         }
     </style>
 </head>
