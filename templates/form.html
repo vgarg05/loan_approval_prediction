@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <style>
+        div{
+            background-color: #4E1F00; 
+            height: 650px;
+            width: 700px;
+            border-radius: 20px;
+            padding-left: 20px;
+        }
+        h1{
+            color: #F8F4E1;
+            padding-top: 30px;
+            display:flex;
+            justify-content:center;
+        }
+        h2{
+            color: #F8F4E1;
+        }
+        label{
+            color: #FEBA17;
+            font-size: 25px;
+        }
+        input{
+            background-color: #F8F4E1;
+            height: 25px;
+            border-radius: 5px;
+            border-color:#FEBA17 ;
+            margin-bottom: 10px;
+        }
+        button{
+            background-color:#FEBA17;
+            width:200px;
+            height:40px;
+            border-radius:10px;
+            margin-left:250px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Loan Approval !</h1>
+        <form action="{{ url_for('predict') }}" method="POST" >
+            <label for="age">Age : </label>
+            <input type="number" name="person_age" placeholder=" range 20 - 70" id="age"><br>
+            <label for="gender">Gender : </label>
+            <input type="number" name="person_gender" placeholder="Male - 0 , Female - 1" id="gender"><br>
+            <label for="income">Annual Income : </label>
+            <input type="number" name="person_income" step="0.01"  placeholder=" range 8,000 - 4,00,000" id="income"><br>
+            <label for="exp">Years of employment experience : </label>
+            <input type="number" name="person_emp_exp" placeholder="0 - 28" id="exp"><br>
+            <label for="loan">Loan amount requested : </label>
+            <input type="number" name="loan_amnt" step="0.01"  placeholder="max 35,000" id="loan"><br>
+            <label for="rate">Loan interest rate : </label>
+            <input type="number" name="loan_int_rate" step="0.01"  placeholder=" 5 - 20 " id="rate"><br>
+            <label for="percentIncome">Loan amount as a percentage of annual income : </label>
+            <input type="number" name="loan_percent_income" step="0.01"  placeholder=" max 0.70" id="percentIncome"><br>
+            <label for="credHis">Length of credit history in years : </label>
+            <input type="number" name="cb_person_cred_hist_length" placeholder=" range 2 - 10" id="credHis"><br>
+            <label for="score">Credit score of the person : </label>
+            <input type="number" name="credit_score" placeholder="range 400 - 800" id="score"><br>
+            <label for="loanleft">Previous loan defaults : </label>
+            <input type="number" name="previous_loan_defaults_on_file" placeholder=" Yes=1 , No=0" id="loanleft"><br><br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+        {% if results %}
+            <h2>{{ results }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
