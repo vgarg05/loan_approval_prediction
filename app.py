@@ -2,7 +2,8 @@ from flask import Flask, render_template, request, redirect
 import pickle
 from sklearn.preprocessing import StandardScaler
 
-app = Flask(__name__)
+application = Flask(__name__)
+app=application
 
 grid = pickle.load(open("models/grid.pkl", "rb"))
 standard_scaler = pickle.load(open("models/scaler.pkl", "rb"))
