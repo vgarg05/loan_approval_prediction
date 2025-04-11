@@ -55,7 +55,7 @@ Model Used:
 ## 📁 Project Structure
 
 ```bash
-├── models.pkl             
+├── models/             
 │   └── grid.pkl           # Trained Logistic Regression model with best parameters
 │   └── scaler.pkl         # StandardScaler used for input normalization
 ├── notebooks/
