@@ -36,11 +36,9 @@ The model is trained on a dataset of loan applicants with the following key feat
 - Age
 - Gender
 - Applicant Annual Income
-- Self-Employed
 - Loan amount requested
-- Loan amount as a percentage of annual income
 - Length of credit history (in years)
-- Credit History
+- Credit Score
 - Previous loan defaults
 
 The target variable is the **Loan Status** (Approved / Not Approved).
