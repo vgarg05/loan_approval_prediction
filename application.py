@@ -23,7 +23,7 @@ def predict():
             person_emp_exp = float(request.form.get('person_emp_exp'))
             loan_amnt = float(request.form.get('loan_amnt'))
             loan_int_rate = float(request.form.get('loan_int_rate'))
-            loan_percent_income = float(request.form.get('loan_percent_income'))
+            loan_percent_income = loan_amnt / person_income  
             cb_person_cred_hist_length = float(request.form.get('cb_person_cred_hist_length'))
             credit_score = float(request.form.get('credit_score'))
             previous_loan_defaults_on_file = float(request.form.get('previous_loan_defaults_on_file'))
