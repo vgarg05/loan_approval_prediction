@@ -1,5 +1,5 @@
 # 🏦 Loan Approval Prediction Model
-This project is a **machine learning web application** that predicts whether a loan application should be approved based on user inputs such as income, credit history, education, and other financial parameters. 
+This project is a **machine learning web application** that predicts whether a loan application should be approved based on user inputs such as income, credit history, loan amount and other financial parameters. 
 The model uses **Logistic Regression** for classification and has been deployed to a live web domain.
 
 ## 🚀 Live Demo
