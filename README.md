@@ -60,7 +60,7 @@ Model Used:
 │   └── loan_approval.ipynb   # Jupyter notebook for data analysis & model training
 │   └── loan_data.csv         # Dataset used for model training
 ├── templates/
-│   └── index.html         # Results page
+│   └── index.html         # Home page
 │   └── form.html          # Input form page
 ├── appliaction.py         # Flask backend for the web app 
 ├── requirements.txt       # Python dependencies
