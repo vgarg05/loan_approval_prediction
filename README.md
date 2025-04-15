@@ -4,7 +4,7 @@ The model uses **Logistic Regression** for classification and has been deployed 
 
 ## 🚀 Live Demo
 
-👉 👉 [Check out the live app here](https://loan-approval-prediction-xu7o.onrender.com/predict)
+👉 👉 [Check out the live app here](https://loan-approval-prediction-xu7o.onrender.com/predict)  (Will take time to load)
 
 ---
 
